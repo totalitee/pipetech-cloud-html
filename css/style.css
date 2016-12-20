@@ -6,6 +6,23 @@ i {
     color:#787878;
 }
 
+.filtercheckbox {
+    margin-right: 10px !important;
+}
+
+.margin-manholes, .margin-macp {
+    margin-top: 50px;
+}
+
+.margin-searchbox{
+    margin-top: 20px;
+}
+
+.table-section{
+    height: 400px;
+}
+
+
 footer {
     margin-top:20px;
     padding-top:20px;
@@ -13,19 +30,3 @@ footer {
     background-color:#efefef;
 }
 
-/* count indicator near icons */
-.nav>li .count {
-    position: absolute;
-    bottom: 12px;
-    right: 6px;
-    font-size: 9px;
-    background: rgba(51,200,51,0.55);
-    color: rgba(255,255,255,0.9);
-    line-height: 1em;
-    padding: 2px 4px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    border-radius: 10px;
-}
