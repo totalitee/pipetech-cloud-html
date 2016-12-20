@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Pipetech</title>
+    <meta name="generator" content="Bootply"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<!-- header -->
+<div id="top-nav" class="navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Pipetech</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Assets</a></li>
+            <li><a href="#">Inspections</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Map</a></li>
+        </ul>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Org A settings</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#"><i
+                            class="glyphicon glyphicon-user"></i> My Account <span class="caret"></span></a>
+                    <ul id="g-account-menu" class="dropdown-menu" role="menu">
+                        <li><a href="#">My Profile</a></li>
+                    </ul>
+                    <ul id="g-account-menu" class="dropdown-menu" role="menu">
+                        <li><a href="#">Log out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /container -->
+</div>
+<!-- /Header -->
+
+<!-- Main -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2">
+            <strong><i class="glyphicon glyphicon-wrench"></i> Inspection types</strong>
+            <hr>
+            <ul class="nav nav-stacked">
+                <ul class="nav nav-stacked collapse in" id="userMenu">
+                    <li><input id="checkbox1" type="checkbox"><label for="checkbox1">MACP</label></li>
+                    <li><input id="checkbox2" type="checkbox"><label for="checkbox2">LACP</label></li>
+                    <li><input id="checkbox3" type="checkbox"><label for="checkbox3">PACP</label></li>
+                    <li><input id="checkbox4" type="checkbox"><label for="checkbox4">Pipetech basic</label></li>
+                </ul>
+            </ul>
+            <hr>
+            <strong><i class="glyphicon glyphicon-floppy-disk"></i>Saved Inspection Groups</strong>
+            <hr>
+            <ul class="nav nav-stacked">
+                <ul class="nav nav-stacked collapse in" id="userMenu">
+                    <li class="active"><a href="#">Group 1</a></li>
+                    <li><a href="#">Group 2</a></li>
+                </ul>
+            </ul>
+        </div>
+        <!-- /col-3 -->
+        <div class="col-sm-10">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="btn-group" role="group" aria-label="...">
+                        <button type="button" class="btn btn-default">New Asset</button>
+                        <button type="button" class="btn btn-default">Import Assets</button>
+                    </div>
+                </div>
+                <div class="col-lg-offset-4 col-lg-4">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">Go!</button>
+                        </span>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                    <h2>MACP</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="btn-group" role="group" aria-label="...">
+                        <button type="button" class="btn btn-default">Save group</button>
+                        <button type="button" class="btn btn-default">Report</button>
+                        <button type="button" class="btn btn-default">Export</button>
+                    </div>
+                </div>
+                <div class="col-lg-offset-4 col-lg-4">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">Go!</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-2">
+                    <h2>LACP</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="btn-group" role="group" aria-label="...">
+                        <button type="button" class="btn btn-default">Save group</button>
+                        <button type="button" class="btn btn-default">Report</button>
+                        <button type="button" class="btn btn-default">Export</button>
+                    </div>
+                </div>
+                <div class="col-sm-offset-4 col-sm-4 col-lg-offset-4 col-lg-4">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">Go!</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!--/col-span-9-->
+        </div>
+    </div>
+    <!-- /Main -->
+
+    <footer class="text-center">Pipetech 2016</footer>
+
+    <!-- /.modal -->
+    <!-- script references -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
