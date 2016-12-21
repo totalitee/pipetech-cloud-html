@@ -18,6 +18,10 @@ i {
     margin-top: 20px;
 }
 
+.custom-button-size {
+    width: 120px !important;
+}
+
 .table-section{
     height: 400px;
 }

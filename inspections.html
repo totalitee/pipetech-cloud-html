@@ -54,39 +54,47 @@
 <!-- Main -->
 <div class="container-fluid">
     <div class="row">
-        <div class="col-sm-2">
-            <strong>Inspection types</strong>
-            <hr>
-            <ul class="nav nav-stacked">
-                <ul class="nav nav-stacked collapse in" id="userMenu">
-                    <li><label for="checkbox1"><input id="checkbox1" class="filtercheckbox" type="checkbox">MACP</label></li>
-                    <li><label for="checkbox2"><input id="checkbox2" class="filtercheckbox" type="checkbox">LACP</label></li>
-                    <li><label for="checkbox3"><input id="checkbox3" class="filtercheckbox" type="checkbox">PACP</label></li>
-                    <li><label for="checkbox4"><input id="checkbox4" class="filtercheckbox" type="checkbox">Pipetech basic</label></li>
-                </ul>
-            </ul>
-            <hr>
-            <strong>Saved Inspection Groups</strong>
-            <hr>
-            <ul class="nav nav-stacked">
-                <ul class="nav nav-stacked collapse in" id="userMenu">
-                    <li class="active"><a href="#">Group 1</a></li>
-                    <li><a href="#">Group 2</a></li>
-                </ul>
+        <div class="hidden-xs-2 col-sm-2 col-md-2">
+            <ul class="nav nav-pills nav-stacked" id="stacked-menu">
+                <li>
+                    <a data-toggle="collapse" data-parent="#stacked-menu" href="#inspectionTypes"><strong>Inspection
+                        Types</strong><span class="caret arrow"></span></a>
+                    <hr>
+                    <ul class="nav nav-pills nav-stacked collapse" id="inspectionTypes">
+                        <li><label for="macpCheckbox"><input id="macpCheckbox" class="filtercheckbox" type="checkbox">MACP</label>
+                        </li>
+                        <li><label for="lacpCheckbox"><input id="lacpCheckbox" class="filtercheckbox" type="checkbox">LACP</label>
+                        </li>
+                        <li><label for="pacpCheckbox"><input id="pacpCheckbox" class="filtercheckbox" type="checkbox">PACP</label>
+                        </li>
+                        <li><label for="pipetechBasicCheckbox"><input id="pipetechBasicCheckbox" class="filtercheckbox"
+                                                                      type="checkbox">Pipetech basic</label></li>
+                        <hr>
+                    </ul>
+                </li>
+                <li>
+                    <a data-toggle="collapse" data-parent="#stacked-menu" href="#savedInspectionTypes"><strong>Saved
+                        Inspection Types</strong><span class="caret arrow"></span></a>
+                    <hr>
+                    <ul class="nav nav-pills nav-stacked collapse" id="savedInspectionTypes">
+                        <li class="active"><a href="#">Group 1</a></li>
+                        <li><a href="#">Group 2</a></li>
+                        <hr>
+                    </ul>
+                </li>
             </ul>
         </div>
-        <!-- /col-3 -->
-        <div class="col-sm-10">
+        <div class="col-sm-10 col-md-10">
             <div class="row">
                 <div class="col-sm-6 col-md-6">
                     <div class="btn-group" role="group" aria-label="...">
-                        <button type="button" class="btn btn-default">New Asset</button>
-                        <button type="button" class="btn btn-default">Import Assets</button>
+                        <button type="button" class="btn btn-default custom-button-size">New Asset</button>
+                        <button type="button" class="btn btn-default custom-button-size">Import Assets</button>
                     </div>
                 </div>
                 <div class="col-sm-offset-2 col-md-offset-2 col-sm-4 col-md-4">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search manholes">
+                        <input type="text" class="form-control" placeholder="Search all inspections">
                         <span class="input-group-btn">
                             <button class="btn btn-default" type="button">Go!</button>
                         </span>
@@ -102,9 +110,9 @@
             <div class="row">
                 <div class="col-sm-4 col-md-4">
                     <div class="btn-group" role="group" aria-label="...">
-                        <button type="button" class="btn btn-default">Save group</button>
-                        <button type="button" class="btn btn-default">Report</button>
-                        <button type="button" class="btn btn-default">Export</button>
+                        <button type="button" class="btn btn-default custom-button-size">Save group</button>
+                        <button type="button" class="btn btn-default custom-button-size">Report</button>
+                        <button type="button" class="btn btn-default custom-button-size">Export</button>
                     </div>
                 </div>
                 <div class="col-sm-offset-4 col-md-offset-4 col-sm-4 col-md-4">
@@ -130,14 +138,14 @@
             <div class="row">
                 <div class="col-sm-4 col-md-4">
                     <div class="btn-group" role="group" aria-label="...">
-                        <button type="button" class="btn btn-default">Save group</button>
-                        <button type="button" class="btn btn-default">Report</button>
-                        <button type="button" class="btn btn-default">Export</button>
+                        <button type="button" class="btn btn-default custom-button-size">Save group</button>
+                        <button type="button" class="btn btn-default custom-button-size">Report</button>
+                        <button type="button" class="btn btn-default custom-button-size">Export</button>
                     </div>
                 </div>
                 <div class="col-sm-offset-4 col-md-offset-4 col-sm-4 col-md-4">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search for...">
+                        <input type="text" class="form-control" placeholder="Search LACP">
                         <span class="input-group-btn">
                             <button class="btn btn-default" type="button">Go!</button>
                         </span>
@@ -152,14 +160,16 @@
 
         </div>
     </div>
-    <!-- /Main -->
+</div>
 
-    <footer class="text-center">Pipetech 2016</footer>
+<footer class="text-center">Pipetech 2016</footer>
 
-    <!-- /.modal -->
-    <!-- script references -->
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+<script>
+    if ($("#xs-check").is(":visible"))
+        $("#inspectionTypes").removeClass("in");
+</script>
 </body>
 </html>
