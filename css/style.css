@@ -2,8 +2,40 @@ i {
     font-size:16px;
 }
 
+
+/*Side-menu*/
 .nav > li > a {
-    color:#787878;
+    color:#B41227;
+    font-weight: 500;
+}
+
+/*main menu*/
+.navbar-inverse .navbar-nav>li>a {
+    color: #f5f5f5;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:hover ,
+.navbar-inverse .navbar-nav>.open>a:focus {
+    color: #f5f5f5;
+    background: #B41227;;
+}
+
+.navbar-inverse {
+    background-color:#B41227;
+}
+
+.navbar-brand {
+    padding: 0px;
+}
+
+.navbar-brand>img {
+    height: 100%;
+    padding: 15px;
+    width: auto;
 }
 
 .filtercheckbox {

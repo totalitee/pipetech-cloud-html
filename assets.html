@@ -16,156 +16,167 @@
 <!-- header -->
 <div id="top-nav" class="navbar navbar-inverse navbar-static-top">
     <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Pipetech</a>
-        </div>
-
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Assets</a></li>
-                <li><a href="#">Inspections</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Map</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Org A settings</a></li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#"><i
-                            class="glyphicon glyphicon-user"></i> My Account <span class="caret"></span></a>
-                    <ul id="g-account-menu" class="dropdown-menu" role="menu">
-                        <li><a href="#">My Profile</a></li>
-                    </ul>
-                    <ul id="g-account-menu" class="dropdown-menu" role="menu">
-                        <li><a href="#">Log out</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <!-- /container -->
-</div>
-<!-- /Header -->
-
-<!-- Main -->
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-xs-2 hidden-xs col-sm-2 col-md-2">
-
-            <ul class="nav nav-pills nav-stacked" id="stacked-menu">
-                <li>
-                    <a data-toggle="collapse" data-parent="#stacked-menu" href="#assetTypes"><strong>Asset types</strong><span class="caret arrow"></span></a>
-                    <hr>
-                    <ul class="nav nav-pills nav-stacked collapse" id="assetTypes">
-                        <li><label for="manholeCheckbox"><input id="manholeCheckbox" class="filtercheckbox" type="checkbox">Manholes</label></li>
-                        <li><label for="lateralsCheckbox"><input id="lateralsCheckbox" class="filtercheckbox" type="checkbox">Laterals</label></li>
-                        <li><label for="mainlinesCheckbox"><input id="mainlinesCheckbox" class="filtercheckbox" type="checkbox">Mainlines</label></li>
-                        <hr>
-                    </ul>
-                </li>
-                <li>
-                    <a data-toggle="collapse" data-parent="#stacked-menu" href="#savedAssetGroups"><strong>Saved Asset Groups<strong></strong><span class="caret arrow"></span></a>
-                    <hr>
-                    <ul class="nav nav-pills nav-stacked collapse" id="savedAssetGroups">
-                        <li class="active"><a href="#">Group 1</a></li>
-                        <li><a href="#">Group 2</a></li>
-                        <hr>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <!-- /col-3 -->
-        <div class="col-sm-10">
-            <div class="row">
-                <div class="col-sm-6 col-md-6 ">
-                    <div class="btn-group" role="group" aria-label="...">
-                        <button type="button" class="btn btn-default custom-button-size">New Asset</button>
-                        <button type="button" class="btn btn-default custom-button-size">Import Assets</button>
-                    </div>
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
                 </div>
-                <div class="col-sm-offset-2 col-md-offset-2 col-sm-4 col-md-4">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search all assets">
-                        <span class="input-group-btn">
+            </div>
+            <div class="col-sm-10 col-md-10">
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Assets</a></li>
+                        <li><a href="#">Inspections</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Map</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Org A settings</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#"><i
+                                    class="glyphicon glyphicon-user"></i> My Account <span class="caret"></span></a>
+                            <ul id="g-account-menu" class="dropdown-menu" role="menu">
+                                <li><a href="#">My Profile</a></li>
+                            </ul>
+                            <ul id="g-account-menu" class="dropdown-menu" role="menu">
+                                <li><a href="#">Log out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /container -->
+    </div>
+</div>
+
+    <!-- /Header -->
+
+    <!-- Main -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-2 hidden-xs col-sm-2 col-md-2">
+
+                <ul class="nav nav-pills nav-stacked" id="stacked-menu">
+                    <li>
+                        <a data-toggle="collapse" data-parent="#stacked-menu" href="#assetTypes"><strong>Asset
+                            types</strong><span class="caret arrow"></span></a>
+                        <hr>
+                        <ul class="nav nav-pills nav-stacked collapse" id="assetTypes">
+                            <li><label for="manholeCheckbox"><input id="manholeCheckbox" class="filtercheckbox"
+                                                                    type="checkbox">Manholes</label></li>
+                            <li><label for="lateralsCheckbox"><input id="lateralsCheckbox" class="filtercheckbox"
+                                                                     type="checkbox">Laterals</label></li>
+                            <li><label for="mainlinesCheckbox"><input id="mainlinesCheckbox" class="filtercheckbox"
+                                                                      type="checkbox">Mainlines</label></li>
+                            <hr>
+                        </ul>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" data-parent="#stacked-menu" href="#savedAssetGroups"><strong>Saved
+                            Asset Groups<strong></strong><span class="caret arrow"></span></a>
+                        <hr>
+                        <ul class="nav nav-pills nav-stacked collapse" id="savedAssetGroups">
+                            <li class="active"><a href="#">Group 1</a></li>
+                            <li><a href="#">Group 2</a></li>
+                            <hr>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /col-3 -->
+            <div class="col-sm-10">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 ">
+                        <div class="btn-group" role="group" aria-label="...">
+                            <button type="button" class="btn btn-default custom-button-size">New Asset</button>
+                            <button type="button" class="btn btn-default custom-button-size">Import Assets</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-offset-2 col-md-offset-2 col-sm-4 col-md-4">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search all assets">
+                            <span class="input-group-btn">
                             <button class="btn btn-default" type="button">Go!</button>
                         </span>
+                        </div>
                     </div>
+                    <hr>
                 </div>
-                <hr>
-            </div>
-            <div class="row margin-manholes">
-                <div class="col-sm-4 col-md-4">
-                    <h2>Manholes</h2>
-                </div>
-                <div class="col-sm-offset-4 col-md-offset-4 col-sm-4 col-md-4">
-                    <div class="margin-searchbox">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search manholes">
-                            <span class="input-group-btn">
+                <div class="row margin-manholes">
+                    <div class="col-sm-4 col-md-4">
+                        <h2>Manholes</h2>
+                    </div>
+                    <div class="col-sm-offset-4 col-md-offset-4 col-sm-4 col-md-4">
+                        <div class="margin-searchbox">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search manholes">
+                                <span class="input-group-btn">
                                 <button class="btn btn-default" type="button">Go!</button>
                             </span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-12">
-                    <div class="btn-group" role="group" aria-label="...">
-                        <button type="button" class="btn btn-default custom-button-size">Save group</button>
-                        <button type="button" class="btn btn-default custom-button-size">Report</button>
-                        <button type="button" class="btn btn-default custom-button-size">Export</button>
-                        <button type="button" class="btn btn-default custom-button-size">New Inspection</button>
-                        <button type="button" class="btn btn-default custom-button-size">New Project</button>
-                        <button type="button" class="btn btn-default custom-button-size">Show on Map</button>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="btn-group" role="group" aria-label="...">
+                            <button type="button" class="btn btn-default custom-button-size">Save group</button>
+                            <button type="button" class="btn btn-default custom-button-size">Report</button>
+                            <button type="button" class="btn btn-default custom-button-size">Export</button>
+                            <button type="button" class="btn btn-default custom-button-size">New Inspection</button>
+                            <button type="button" class="btn btn-default custom-button-size">New Project</button>
+                            <button type="button" class="btn btn-default custom-button-size">Show on Map</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="table-section">
+                <div class="row">
+                    <div class="table-section">
+                    </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="col-sm-4 col-md-4 col-lg-4">
-                    <h2>LACP</h2>
-                </div>
-                <div class="col-sm-offset-4 col-md-offset-4 col-sm-4 col-md-4">
-                    <div class="margin-searchbox">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search LACP">
-                            <span class="input-group-btn">
+                <div class="row">
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <h2>LACP</h2>
+                    </div>
+                    <div class="col-sm-offset-4 col-md-offset-4 col-sm-4 col-md-4">
+                        <div class="margin-searchbox">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search LACP">
+                                <span class="input-group-btn">
                             <button class="btn btn-default" type="button">Go!</button>
                         </span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-12">
-                    <div class="btn-group" role="group" aria-label="...">
-                        <button type="button" class="btn btn-default custom-button-size">Save group</button>
-                        <button type="button" class="btn btn-default custom-button-size">Report</button>
-                        <button type="button" class="btn btn-default custom-button-size">Export</button>
-                        <button type="button" class="btn btn-default custom-button-size">New Inspection</button>
-                        <button type="button" class="btn btn-default custom-button-size">New Project</button>
-                        <button type="button" class="btn btn-default custom-button-size">Show on Map</button>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="btn-group" role="group" aria-label="...">
+                            <button type="button" class="btn btn-default custom-button-size">Save group</button>
+                            <button type="button" class="btn btn-default custom-button-size">Report</button>
+                            <button type="button" class="btn btn-default custom-button-size">Export</button>
+                            <button type="button" class="btn btn-default custom-button-size">New Inspection</button>
+                            <button type="button" class="btn btn-default custom-button-size">New Project</button>
+                            <button type="button" class="btn btn-default custom-button-size">Show on Map</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="table-section">
+                <div class="row">
+                    <div class="table-section">
+                    </div>
                 </div>
+
+
+                <!--/col-span-9-->
             </div>
-
-
-            <!--/col-span-9-->
         </div>
     </div>
-</div>
     <!-- /Main -->
 
     <footer class="text-center">Pipetech 2016</footer>
